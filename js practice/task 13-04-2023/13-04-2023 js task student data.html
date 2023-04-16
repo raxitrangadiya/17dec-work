@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>task date:14-04-2023</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Total,Average,Gradaing,Percentage Calculator </h1>
+    <div class="page">
+      <div class="col-50">
+        <form action="" method="post">
+          <table id="student-data">
+            <thead>
+              <tr>
+                <td><label for="subject">SUBJECT:</label></td>
+                <td><label for="marks">MARKS:</label></td>
+              </tr>
+            </thead>
+            <tr>
+              <td> <label for="maths:">Maths:</label></td>
+              <td><input id="maths" type="number" placeholder="enter your marks"></td>
+            </tr>
+            <td> <label for="gujrati:">Gujrati:</label></td>
+            <td><input id="gujrati" type="number" placeholder="enter your marks"></td>
+            </tr>
+            <td> <label for="english:">English:</label></td>
+            <td><input id="english" type="number" placeholder="enter your marks"></td>
+            </tr>
+            <td> <label for="hindi:">Hindi:</label></td>
+            <td><input id="hindi" type="number" placeholder="enter your marks"></td>
+            </tr>
+            <tr>
+              <td id="button" onclick="" colspan="2"><input type="button" value="SUBMIT"></td>
+            </tr>
+          </table>
+        </form>
+      </div>
+      <div class="result col-50">
+        <div class="total"></div>
+        <div id="average"></div>
+        <div id="grading"></div>
+        <div id="percentage"></div>
+        <div id="results"></div>
+      </div>
+    </div>
+  </div>
+  <script>
+    // create a  variable for collecting a data 
+document.getElementById("button").addEventListener("click",function () {
+    // get data in a variable
+    var maths =  document.getElementById("maths").value;
+    var gujrati =  document.getElementById("gujrati").value;
+    var english =  document.getElementById("english").value;
+    var hindi =  document.getElementById("hindi").value;
+    // console.log(marks);
+    // calculating a total 
+var addition = parseInt(maths)+parseInt(gujrati)+parseInt(english)+parseInt(hindi) ;
+// calculating average
+// var average = addition / 5 ;
+// display a record data 
+DispDiv = document.getElementsByClassName("total")
+// DispDiv[0].innerHTML = "addition"
+})
+
+
+  </script>
+</body>
+
+</html>

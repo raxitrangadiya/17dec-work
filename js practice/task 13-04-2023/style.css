@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 1000px;
+    margin: 0 auto;
+    /* display: flex; */
+}
+.col-50{
+    width: 50%;
+    margin: 50px;
+}
+#student-data , #student-data tr td{
+    border: 1px solid rgb(171, 134, 134);
+    padding: 10px;
+    
+}   
+table{
+margin: 0 auto;
+background-color: rgb(223, 209, 237);
+}
+#button>input{
+    color: rgb(35, 19, 46);
+    background-color: rgb(156, 201, 156);
+    font-size: 25px; 
+    padding: 18px 93px;
+}
+tr>td>label{
+    color: rgb(192, 65, 65);
+    font-size: 30px;
+}
+tr>td>input{
+    padding: 13px;
+    font-size: 25PX;
+    background-color: rgb(237, 240, 237);
+
+}
+.page{
+    display: flex;
+}
+button:hover{
+    cursor: pointer;
+}
