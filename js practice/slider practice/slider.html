@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>slider gujarat tourism</title>
+    <style>
+        .slider-img{
+             width: 1600px;
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <img src="./Rani-Ki-Vav-Banner.jpg" alt="Rani-Ki-Vav-Banner.jpg" class="slider-img">
+    <img src="./Sasan-Gir-Banner.png" alt="Sasan-Gir-Banner.png" class="slider-img">
+    <img src="./SOU-Banner.jpg" alt="SOU-Banner.jpg" class="slider-img">
+    <img src="./Sun-Temple-Banner.jpg" alt="Sun-Temple-Banner.jpg" class="slider-img">
+    <!-- java script slider   -->
+    <script>
+        // declare a variable
+        SliderImgs = document.getElementsByClassName("slider-img")
+        console.log(SliderImgs);
+        counter = 0;
+// create a function
+        function slider(params) {
+            counter++
+            console.log(counter);
+       
+        // for loop start
+        for (let index = 0; index < SliderImgs.length; index++) {
+            // const element = SliderImgs[index];
+            console.log(SliderImgs[index]);
+            SliderImgs[index].style.display = "none"
+        }
+        // for loop end
+        // counter start
+        SliderImgs[counter].style.display="block"
+      setTimeout(slider,3000)
+        // counter end
+    }
+    slider()
+    </script>
+</body>
+</html>
