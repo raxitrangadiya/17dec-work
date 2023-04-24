@@ -10,9 +10,6 @@
 
 <body>
 
-
-
-
     <!-- example-1 -->
 
 
@@ -80,7 +77,21 @@
 
     <script>
 
-
+        let marks = prompt("enter your marks")
+        marks = Number.parseInt(marks)//convert the number to string
+        if (marks >= 0 && marks <= 100) {
+            if (marks >= 0 && marks < 33) {
+                if (marks >= 33 && marks < 50) {
+                    console.log("pass with passclass");
+                } else if (marks >= 50 && marks < 70) {
+                    console.log("pass with second class")
+                }
+            } else {
+                console.log("faill")
+            }
+        } else {
+            document.write("enter valid marks")
+        }
     </script>
 </body>
 
