@@ -36,13 +36,13 @@
             <td><input id="hindi" type="number" placeholder="enter your marks"></td>
             </tr>
             <tr>
-              <td id="button" onclick="" colspan="2"><input type="button" value="SUBMIT"></td>
+              <td colspan="2"><input id="btn"  type="button" value="  SUBMIT TO GET YOUR RESULT"></td>
             </tr>
           </table>
         </form>
       </div>
       <div class="result col-50">
-        <div class="total"></div>
+        <div id="total"></div>
         <div id="average"></div>
         <div id="grading"></div>
         <div id="percentage"></div>
@@ -50,26 +50,7 @@
       </div>
     </div>
   </div>
-  <script>
-    // create a  variable for collecting a data 
-document.getElementById("button").addEventListener("click",function () {
-    // get data in a variable
-    var maths =  document.getElementById("maths").value;
-    var gujrati =  document.getElementById("gujrati").value;
-    var english =  document.getElementById("english").value;
-    var hindi =  document.getElementById("hindi").value;
-    // console.log(marks);
-    // calculating a total 
-var addition = parseInt(maths)+parseInt(gujrati)+parseInt(english)+parseInt(hindi) ;
-// calculating average
-// var average = addition / 5 ;
-// display a record data 
-DispDiv = document.getElementsByClassName("total")
-// DispDiv[0].innerHTML = "addition"
-})
-
-
-  </script>
+<script src="./js.js"></script>
 </body>
 
 </html>
