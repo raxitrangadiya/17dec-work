@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+//example-1
+
+
+function timesFive(num) { 
+    return num * 5;
+}
+
+var result = timesFive(10);
+console.log(result);
+
+
+
+//example-2
+function sum(n) {
+    if (n <= 1) {
+        return n;
+    }
+    return n + sum(n - 1);
+}
+
+
+
+
+
+//example-3
+let countDown = function f(fromNumber) {
+    console.log(fromNumber);
+    
+    let nextNumber = fromNumber - 1;
+    
+    if (nextNumber > 0) {
+        f(nextNumber);
+    }
+}
+
+let newYearCountDown = countDown;
+countDown = null;
+newYearCountDown(10);
+
+
+
+
+//example-4
+
+
+
+function add(x, y) {
+  return x + y;
+}
+
+let result = add(10, 20);
+console.log(result);
+</script>
+</body>
+</html>
