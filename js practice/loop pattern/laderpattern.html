@@ -7,8 +7,12 @@
     <title>ladder</title>
 </head>
 <body>
+    <!-- customizeble lader pattern craeate -->
     <script>
-        for (let index = 0; index < 10; index++) {
+        let n=prompt("enter number draw a pattern")
+        n=parseInt(n)
+        console.log(typeof n);
+        for (let index = 0; index < n; index++) {
                 for (let a = 0; a <=index; a++) {
                     document.write("  *  ")
                 }
