@@ -8,16 +8,19 @@
 </head>
 <body>
    <script>
+    let a=prompt("enter number to design pattern")
+  a =Number.parseInt(a)
+    console.log(typeof a);
     // let a =5
-    for (let n = 1; n <= 5; n++) {
-      for (let num = 1; num <= 5; num++) {
-        if (n===1 || n===5) {
-          document.write("n")
+    for (let n = 1; n <= a; n++) {
+      for (let num = 1; num <= a; num++) {
+        if (n===1 || n===a) {
+          document.write("*")
         } else {
           if (num===1 || num===5) {
-            document.write("y")
+            document.write("*")
           } else {
-            document.write("x")
+            document.write("*")
           }
         }
       }
