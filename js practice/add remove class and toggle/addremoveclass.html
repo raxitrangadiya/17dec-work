@@ -64,9 +64,9 @@
 document.getElementById("toggle-class").addEventListener("click",function () {
   console.log(pera.classList);
   let clases = pera.className.replace(/\s{2,}/g, ' ').split(" ");
-  for (let index = 0; index < array.length; index++) {
-    const element = array[index];
-    
+  for (i= 0; i < clases.length; i++) {
+    const element = clases[index];
+    console.log(clases);
   }
 })
     </script>
