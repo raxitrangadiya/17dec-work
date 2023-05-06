@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="post">
+        <table align="center">
+            <tr>
+                <td> <label for="username">User name</label> </td>
+                <td><input type="text" name="username" onblur="checkreq(this)" id="username" required>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="password"> password</label></td>
+                <td><input type="text" name="password" onblur="checkreq(this)" id="password" required>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="cpassword"> confirm password</label></td>
+                <td><input type="text" name="cpassword" onblur="checkreq(this)" id="cpassword"
+                        required>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="email"> email</label></td>
+                <td><input type="text" name="email" onblur="checkreq(this)" id="email" required>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="mobile">mobile</label> </td>
+                <td><input type="text" name="mobile" onblur="checkreq(this)" id="mobile" required
+                        pattern="[0-9]+" minlength="10" maxlength="10" title="please enter number only">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="submit" name="btn" id="btn"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
