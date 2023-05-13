@@ -1,45 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <form method="post">
-        <table align="center">
-            <tr>
-                <td> <label for="username">User name</label> </td>
-                <td><input type="text" name="username" onblur="checkreq(this)" id="username" required>
-                </td>
-            </tr>
-            <tr>
-                <td><label for="password"> password</label></td>
-                <td><input type="text" name="password" onblur="checkreq(this)" id="password" required>
-                </td>
-            </tr>
-            <tr>
-                <td><label for="cpassword"> confirm password</label></td>
-                <td><input type="text" name="cpassword" onblur="checkreq(this)" id="cpassword"
-                        required>
-                </td>
-            </tr>
-            <tr>
-                <td><label for="email"> email</label></td>
-                <td><input type="text" name="email" onblur="checkreq(this)" id="email" required>
-                </td>
-            </tr>
-            <tr>
-                <td><label for="mobile">mobile</label> </td>
-                <td><input type="text" name="mobile" onblur="checkreq(this)" id="mobile" required
-                        pattern="[0-9]+" minlength="10" maxlength="10" title="please enter number only">
-                </td>
-            </tr>
-            <tr>
-                <td colspan="2"><input type="submit" name="btn" id="btn"></td>
-            </tr>
-        </table>
+      <table align="center">
+        <tr>
+          <td><label for="username">User name</label></td>
+          <td>
+            <input
+              type="text"
+              name="username"
+              onblur="checkreq(this)"
+              id="username"
+              required
+            />
+            <span id="error"></span>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="password"> password</label></td>
+          <td>
+            <input
+              type="text"
+              name="password"
+              onblur="checkreq(this)"
+              id="password"
+              required
+            />
+          </td>
+        </tr>
+        <tr>
+          <td><label for="cpassword"> confirm password</label></td>
+          <td>
+            <input
+              type="text"
+              name="cpassword"
+              onblur="checkreq(this)"
+              id="cpassword"
+              required
+            />
+          </td>
+        </tr>
+        <tr>
+          <td><label for="email"> email</label></td>
+          <td>
+            <input
+              type="text"
+              name="email"
+              onblur="checkreq(this)"
+              id="email"
+              required
+            />
+          </td>
+        </tr>
+        <tr>
+          <td><label for="mobile">mobile</label></td>
+          <td>
+            <input
+              type="text"
+              name="mobile"
+              onblur="checkreq(this)"
+              id="mobile"
+              required
+              pattern="[0-9]+"
+              minlength="10"
+              maxlength="10"
+              title="please enter number only"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2"><input type="submit" name="btn" id="btn" /></td>
+        </tr>
+      </table>
     </form>
-</body>
+    <script>
+      function checkreq(kaipan, InpuT) {
+        const SpanTag = document.createElement("span");
+        // SpanTag.value = "somthing";
+        SpanTag.innerText = "this field is required";
+        var spanElement = document.createElement("span");
+        spanElement.textContent = "Dynamic Span";
+        spanElement.style.color = "red";
+        // Step 3: Append the <span> element to its parent's next sibling
+        var parentElement = document.getElementsByTagName("input"); // Replace 'parent' with the actual parent element's ID
+        var nextSibling = parentElement.nextSibling;
+        nextSibling.appendChild(spanElement);
+        // console.log(SpanTag);
+
+
+
+        let inputdata = kaipan.value;
+
+
+
+        if (inputdata == "") {
+          document.getElementById("error").innerHTML = SpanTag;
+          document.get
+        } else {
+        }
+      }
+    </script>
+  </body>
 </html>
